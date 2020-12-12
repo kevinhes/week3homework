@@ -1,0 +1,884 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h2{
+    font-size: 64px;
+    line-height: 96px;
+}
+h3{
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: bold;
+}
+h4{
+    font-size: 24px;
+    line-height: 1.5;
+    color: #650300;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align-last: left;
+}
+img{
+    display: block;
+}
+@media(max-width: 992px){
+    h3{
+        font-size: 32px;
+        line-height: 48px;
+    }
+}
+@media(max-width:767px){
+    h3{
+        font-size: 24px;
+    }
+}
+.header{
+    background: #AA0601;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 29.43px;
+    padding-left: 88px;
+    padding-right: 88px;
+}
+.logo img{
+    display: block;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 496px;
+}
+.nav-item{
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+}
+@media(max-width: 992px){
+    .nav{
+        width: 440px;
+    }
+    .header{
+        padding-left: 39px;
+        padding-right: 39px;
+    }
+}
+@media(max-width:767px){
+    .header{
+        display: block;
+        padding-top: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+    .logo{
+        padding-bottom: 10.86px;
+    }
+    .logo img{
+        margin: 0 auto;
+        width: 48px;
+    }
+    .nav{
+        flex-wrap: wrap;
+    }
+    .nav li{
+        width: 50%;
+        text-align: center;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+}
+.banner{
+    height: 840px;
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan{
+    text-align: right;
+    color: #650300;
+    width: 1110px;
+}
+.slogan p{
+    font-size: 36px;
+    line-height: 54px;
+    text-align-last: right;
+}
+@media(max-width: 992px){
+    .slogan{
+        width: 690px;
+    }
+    .slogan p{
+        font-size: 20px;
+        line-height: 39px;
+    }
+    .slogan h2{
+        font-size: 48px;
+        line-height: 72px;
+    }
+}
+@media(max-width:767px){
+    .banner{
+        height: 394px;
+    }
+    .slogan p{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .slogan h2{
+        font-size: 30px;
+        line-height: 72px;
+    }
+}
+
+/* 第二區塊 */
+.profession{
+    background: #AA06010D;
+    padding-top: 55px;
+    padding-bottom: 80px;
+}
+.profession-content{
+    margin: 0 auto;
+    max-width: 1063px;
+}
+.profession-content h3{
+    text-align: center;
+    color: #650300;
+    margin-bottom: 60px;
+}
+.profession-icon{
+    display: flex;
+    justify-content: space-between;
+}
+.profession-list{
+    text-align: center;
+    width: 208px;
+}
+.profession-img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(max-width: 992px){
+    .profession-icon{
+        flex-wrap: wrap;
+    }
+    .profession-list{
+        width: 237px;
+    }
+    .profession-content{
+        width: 597px;
+    }
+    .profession{
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+    .profession-icon h3{
+        margin-bottom: 30.5px;
+    }
+    .profession{
+        padding-left: 39px;
+        padding-right: 39px;
+    }
+}
+@media(max-width:767px){
+    .profession h3{
+        font-size: 24px;
+        line-height: 48px;
+    }
+    .profession-content{
+        width: 237px;
+    }
+    .profession-icon{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        width: 237px;
+
+    }
+    .profession-list{
+        margin-bottom: 40px;
+    }
+}
+/* 第三區塊 */
+.classicglasses{
+    margin: 0 auto;
+    max-width: 1110px;
+    text-align: center;
+    padding-top: 59px;
+    padding-bottom: 48px;
+}
+.classictittle{
+    color: #650300;
+    margin-bottom: 60px;
+}
+.classicglasses-type{
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.classicglasses-optical{
+    margin-right: 30px;
+    height: 320px;
+    width: 635px;
+    background-image: url(../images/product-1.png);
+    background-position: center;
+    background-size: cover;
+}
+.classicglasses-sunglasses{
+    margin-left: 30px;
+    height: 320px;
+    width: 635px;
+    background-image: url(../images/product-2.png);
+    background-position: center;
+    background-size: cover;
+}
+.classicglasses-functional{
+    margin-right: 30px;
+    height: 320px;
+    width: 635px;
+    background-image: url(../images/product-3.png);
+    background-position: center;
+    background-size: cover;
+}
+.diamond{
+    display: flex;
+}
+.diamond-white{
+    display: none;
+}
+.classicglasses-type img{
+    margin-right: 8px;
+}
+.classicglasses-type h3{
+    font-style: italic;
+    color: #AA0601;
+}
+.classicglasses-type:nth-child(3){
+    flex-direction: row-reverse;
+}
+@media(max-width: 992px){
+    .classicglasses{
+        padding-top: 38.5px;
+        padding-bottom: 40px;
+    }
+    .classicglasses-optical{
+        margin-left: 39px;
+        width: 390px;
+        height: 168px;
+    }
+    .classicglasses-sunglasses{
+        width: 390px;
+        height: 168px;
+        margin-left: 39px;
+        margin-right: 30px;
+    }
+    .classicglasses-functional{
+        margin-left: 39px;
+        width: 390px;
+        height: 168px;
+    }
+    .classicglasses-type:nth-child(3){
+        flex-direction: row;
+    }
+    .classicglasses-type:nth-child(4){
+        margin: 0px ;
+    }
+    .classictittle{
+        margin-bottom: 30.5px;
+    }
+}
+@media(max-width: 767px){
+    .classicglasses{
+        padding-top: 32px;
+    }
+    .classictittle{
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    .classicglasses-optical{
+        width: 345px;
+        margin: 0 auto;
+    }
+    .classicglasses-sunglasses{
+        width: 345px;
+        margin: 0 auto;
+    }
+    .classicglasses-functional{
+        width: 345px;
+        margin: 0 auto;
+    }
+    .classicglasses-type{
+        position: relative;
+    }
+    .diamond{
+        position: absolute;
+        left: 110px;
+    }
+    .diamond-red{
+        display: none;
+    }
+    .diamond-white{
+        display: block;
+    }
+    .diamond h3{
+        color: white;
+    }
+}
+/* 第四區塊 */
+.jointname{
+    background-image: url(../images/bg.png);
+    height: 681.5px;
+    background-position: center;
+    background-size: cover;
+    padding-top: 61.5px;
+}
+.jointname h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 57.5px;
+}
+.double-a{
+    background-image: url(../images/product-8.png);
+    width: 540px;
+    height: 472px;
+    position: relative;
+}
+.joint-sub{
+    font-size: 72px;
+    line-height: 108px;
+    color: #AA0601;
+    font-weight: bold;
+    position: absolute;
+    left:104px;
+    top:188px;
+}
+.double-a-bg{
+    background: white;
+    opacity: 0.5;
+    width: 540px;
+    height: 472px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.youth{
+    background-image: url(../images/product-9.png);
+    width: 540px;
+    height: 472px;
+    position: relative;
+    background-size: cover;
+}
+.youth-img{
+    background: white;
+    width: 540px;
+    height: 472px;
+    opacity: 0.5;
+}
+.jointnamebrand{
+    display: flex;
+    max-width: 1110px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+@media(max-width: 992px){
+    .jointname{
+        padding-top: 38.5px;
+    }
+    .jointname h3{
+        margin-bottom: 30.5px;
+    }
+    .double-a{
+        width: 330px;
+        height: 280px;
+        background-size: cover;
+    }
+    .double-a-bg{
+        width: 330px;
+        height: 280px;
+    }
+    .joint-sub{
+        font-size: 32px;
+        line-height: 25px;
+        color: #AA0601;
+        font-weight: bold;
+        position: absolute;
+        left:91px;
+        top:118px;
+}
+    .youth{
+        width: 330px;
+        height: 280px;
+    }
+    .youth-img{
+        width: 330px;
+        height: 280px;
+    }
+    .jointnamebrand{
+        padding-left: 39px;
+        padding-right: 39px;
+    }
+    .jointname{
+        height: 437px;
+    }
+    }
+    @media(max-width: 767px){
+        .jointnamebrand{
+            flex-direction: column;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .jointname{
+            height: 696px;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            box-sizing: border-box;
+        }
+        .jointname h3{
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 28px;
+        }
+        .double-a{
+            width: 345px;
+            margin-bottom: 16px;
+        }
+        .double-a-bg{
+            width: 345px;
+        }
+        .youth{
+            width: 345px;
+            display: block;
+        }
+        .youth-img{
+            width: 345px;
+            display: block;
+        }
+    }
+    /* 顧客回覆 */
+
+.rec-content{
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    max-width: 1110px;
+    flex-wrap: wrap;
+}
+.rec-client{
+    border: 1px solid #DEE2E6;
+    width: 255px;
+}
+.rec h3{
+    color: #650300;
+    text-align: center;
+    margin-bottom: 57.5px;
+}
+.rec{
+    padding-top: 56.5px;
+    padding-bottom: 64px;
+}
+.rec-client h5{
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 14px;
+    left: 21px;
+}
+.rec-client img{
+    margin-bottom: 13px;
+    display: block;
+    max-width: 100%;
+}
+.rec-client-review{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.mb13{
+    margin-bottom: 13px;
+}
+.mb14{
+    margin-bottom: 14px;
+}
+.subcolor{
+    color: #707070;
+}
+.mb9{
+    margin-bottom: 9px;
+}
+
+@media(max-width: 992px){
+    .rec{
+        padding-top: 38.5px;
+    }
+    .rec h3{
+        margin-bottom: 30.5px;
+    }
+    .rec-client{
+        width: 330px;
+        
+    }
+    .rec-content{
+        padding-left: 39px;
+        padding-right: 39px;
+    }
+    .rec-client{
+        margin-bottom: 28px;
+    }
+}
+@media(max-width:767px){
+    .rec{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .rec h3{
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    .rec-client{
+        width: 345px;
+        box-sizing: border-box;
+    }
+    .rec-client img{
+        width: 345px;
+    }
+    .rec-content{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* 聯絡我們 */
+.contact-us{
+    width: 730px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact-us h3{
+    margin-bottom: 21px;
+}
+.contact-us p{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+.form-control{
+    width: 730px;
+    background: #AA06010D;
+    height: 50px;
+    border: 1px solid #000;;
+}
+.h136{
+    height: 136px;
+}
+.contact{
+    padding-top: 61.5px;
+    background: #AA06010D;
+    padding-bottom: 80px;
+}
+.contact-form{
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.contact-form p{
+    margin-bottom: 3px;
+}
+.contact-box{
+    margin-bottom: 41px;
+}
+.button{
+    width: 360px;
+    height: 54px;
+    background:#AA0601;
+    color: white;
+    border: 0px solid #000;
+}
+.mb18{
+    margin-bottom: 18px;
+}
+
+@media(max-width: 992px){
+    .contact{
+        padding-top: 38.5px;
+    }
+    .contact-us{
+        width: 450px;
+    }
+    .contact-us h3{
+    }
+    .form-control{
+        width: 450px;
+    }
+    .contact-us p{
+        font-size: 16px;
+    }
+    .button{
+        width: 210px;
+        height: 36px;
+    }
+}
+@media(max-width:767px){
+    .contact{
+        padding-top: 32px;
+        padding-bottom: 40px;
+    }
+    .contact-us h3{
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    .contact-us p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .contact-us{
+        width: 345px;
+    }
+    .form-control{
+        width: 345px;
+        height: 36px;
+    }
+    .button{
+        width: 165px;
+        font-size: 14px;
+        line-height: 12px;
+    }
+}
+
+.footer{
+    background: #AA0601;
+    padding-top: 36px;
+    padding-bottom: 28.43px;
+}
+.nav-item-footer{
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 48px;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+.footer-nav-item{
+    display: flex;
+    margin-bottom: 32px;
+}
+.footer-inner{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1110px;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+.sns-footer-icon{
+    display: flex;
+    margin-bottom: 22px;
+    justify-content: space-between;
+    width: 208px;
+}
+.sns-icon{
+    display: block; 
+}
+.phone-contact{
+    display: flex;
+    align-items: center;
+    margin-bottom: 19px;
+}
+.phone-icon{
+    margin-right: 17px;
+    width: 44px;
+}
+.number{
+    font-size: 36px;
+    line-height: 54px;
+    color: white;
+    text-decoration: none;
+}
+.mail-icon{
+    margin-right: 12px;
+}
+.mail-contact{
+    display: flex;
+    align-items: center;
+}
+.footer-privacy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width:1110px;
+    margin: 0 auto;
+    padding-top: 24px;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+}
+.footer-logo img{
+    margin-right: 38px;
+}
+.footer-logo p{
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+}
+.policy{
+    display: flex;
+}
+.policy p{
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.mr62{
+    margin-right: 62px;
+}
+
+@media(max-width: 992px){
+    .footer{
+        padding-left: 39px;
+        padding-right: 39px;
+    }
+    .nav-item-footer{
+        margin-right: 40px;
+    }
+    .sns-icon{
+        width: 24px;
+        height: 24px;
+    }
+    .sns-icon img{
+        width: 24px;
+        height: 24px;
+    }
+    .sns-footer-icon{
+        margin-bottom: 0px;
+    }
+    .phone-icon{
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+    .mail-icon{
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+    .number{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .footer-logo img{
+        display: none;
+    }
+    .policy p{
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+@media(max-width: 767px){
+    .footer{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .footer-nav-item{
+        display: none;
+    }
+    .phone-contact{
+        margin-bottom: 8px;
+    }
+    .number{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .sns-footer-icon{
+        max-width: 120px;
+    }
+    .footer-logo p{
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 8px;
+    }
+    .footer-privacy {
+        display: block;
+        flex-direction: row-reverse;
+    }
+    .policy{
+        display: block;
+    }
+    .policy p{
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom:8px;
+    }
+    .footer-logo img{
+        display: block;
+        position:absolute;
+        width: 46px;
+        right:0px;
+        top:68px;
+        margin-right: 0;
+    }
+    .footer-logo{
+        position: relative;
+        display: block;
+    }
+
+}
